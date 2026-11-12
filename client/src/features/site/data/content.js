@@ -48,7 +48,7 @@ export const MARQUEE_IMAGES = GALLERY.length
 
 // Intro banner background. Replace with a real photo of your works (e.g. "/gallery/works.jpg").
 export const HERO_IMAGE = `${STOCK("photo-1717386255773-1e3037c81788")}&w=2400`;
-export const HERO_HEADLINE = "Tyre building drums, Reconditioning, Spare parts supply.";
+export const HERO_HEADLINE = "Tyre building drum manufacturer, Reconditioning, Spare parts supply.";
 
 // Logos live in client/public/customers/. For TVS and Tollins, add the file and set `logo` (until then the name is shown).
 export const CUSTOMERS = [
@@ -56,4 +56,7 @@ export const CUSTOMERS = [
   { name: "MRF", logo: "/customers/mrf-new.jpg" },
   { name: "TVS", logo: "/customers/tvs-srichakra-ltd.avif" },
   { name: "Tollins", logo: "/customers/tollins.png" },
+  { name: "Emerald", logo: "/customers/Emrald_logo.png" },
+  { name: "ATC", logo: "/customers/atc-tyres.jpg" },
+  { name: "JKTyres", logo: "/customers/JK-Tyre-logo.png" },
 ];
