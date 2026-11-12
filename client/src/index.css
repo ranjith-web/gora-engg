@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-paper font-body text-ink antialiased; }
+  ::selection { background: #733307; color: #fff; }
+}
+
+.hairline { border-color: rgba(28, 16, 8, 0.14); }
