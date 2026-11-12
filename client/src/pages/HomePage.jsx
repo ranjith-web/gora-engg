@@ -2,6 +2,7 @@ import TitleBlock from "../features/site/components/TitleBlock";
 import Marquee from "../features/site/components/Marquee";
 import Customers from "../features/site/components/Customers";
 import Description from "../features/site/components/Description";
+import History from "../features/site/components/History";
 import ProductList from "../features/site/components/ProductList";
 import EnquiryCard from "../features/inquiries/EnquiryCard";
 
@@ -15,6 +16,7 @@ export default function HomePage() {
       <div className="mx-auto grid max-w-6xl items-start gap-6 px-4 pt-8 sm:px-6 sm:pt-10 lg:grid-cols-3">
         <div className="space-y-6 lg:col-span-2">
           <Description />
+          <History />
           <ProductList />
         </div>
         <EnquiryCard />

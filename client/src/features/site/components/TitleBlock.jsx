@@ -1,6 +1,6 @@
 import { company } from "../../../config/company";
 import { anchorClick } from "../../../lib/scroll";
-import { ABOUT_TEXT, CORE_ACTIVITY, HERO_HEADLINE, HERO_IMAGE } from "../data/content";
+import { ABOUT_TEXT, FOUNDED_YEAR, YEARS_OF_EXPERIENCE, CORE_ACTIVITY, HERO_HEADLINE, HERO_IMAGE } from "../data/content";
 
 export default function TitleBlock() {
   return (
@@ -9,6 +9,7 @@ export default function TitleBlock() {
       <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink/95 via-ink/80 to-ink/40" />
 
       <div className="mx-auto max-w-6xl px-4 pb-10 pt-16 sm:px-6 sm:pt-24">
+        <p data-testid="hero-since" className="text-sm font-medium text-accent-light">Since {FOUNDED_YEAR} · {YEARS_OF_EXPERIENCE} years of experience</p>
         <h1 data-testid="page-title" className="mt-3 font-display text-4xl font-bold tracking-tight sm:text-5xl">{company.name}</h1>
         <p className="mt-4 max-w-2xl font-display text-xl font-semibold leading-snug text-stone-100 sm:text-2xl">{HERO_HEADLINE}</p>
         <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-stone-300 sm:text-base">{ABOUT_TEXT}</p>

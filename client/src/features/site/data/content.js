@@ -14,6 +14,14 @@ export const DESCRIPTION = [
   "We make tyre building machine components, drums, moulds, rings and custom engineering assemblies, with a focus on dimensional accuracy, durability and consistent performance. Our product range covers tyre building, bladder moulding, turn-up operations, bead-related applications and strip winding."
 ]
 
+export const FOUNDED_YEAR = 1998;
+export const YEARS_OF_EXPERIENCE = new Date().getFullYear() - FOUNDED_YEAR; // 28 in 2026, keeps itself up to date
+
+export const HISTORY = [
+  `Gora Engineering Works was started in ${FOUNDED_YEAR}. Since then we have built ${YEARS_OF_EXPERIENCE} years of experience in the manufacture of tyre building drums.`,
+  "That experience is what we bring to every drum we make for the tyre manufacturing industry.",
+];
+
 export const STRENGTHS = [
   "Specialised Expertise",
   "Precision Manufacturing",
