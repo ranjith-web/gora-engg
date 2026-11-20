@@ -7,3 +7,5 @@ server/data/*.json
 .venv
 __pycache__
 *.pyc
+.env.local
+.env.*.local
