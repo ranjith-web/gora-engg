@@ -1,14 +1,10 @@
 {
   "name": "gora-server",
   "private": true,
-  "version": "0.1.0",
-  "type": "module",
+  "version": "0.2.0",
   "scripts": {
-    "dev": "node --watch src/index.js",
-    "start": "node src/index.js"
-  },
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.21.1"
+    "setup": "python3 -m venv .venv && .venv/bin/pip install -r requirements.txt",
+    "dev": ".venv/bin/uvicorn app.main:app --reload --port 8000",
+    "start": ".venv/bin/uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}"
   }
 }

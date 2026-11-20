@@ -4,7 +4,6 @@ import AdminLayout from "../layouts/AdminLayout";
 import HomePage from "../pages/HomePage";
 import NotFoundPage from "../pages/NotFoundPage";
 import Dashboard from "../features/admin/pages/Dashboard";
-import Inquiries from "../features/admin/pages/Inquiries";
 import Quotations from "../features/quotations/QuotationsPage";
 import Invoices from "../features/invoices/InvoicesPage";
 
@@ -27,7 +26,6 @@ export default function AppRoutes() {
       {ADMIN_ENABLED && (
       <Route path="/admin" element={<AdminLayout />}>
         <Route index element={<Dashboard />} />
-        <Route path="inquiries" element={<Inquiries />} />
         <Route path="quotations" element={<Quotations />} />
         <Route path="invoices" element={<Invoices />} />
       </Route>
