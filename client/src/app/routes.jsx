@@ -6,6 +6,8 @@ import NotFoundPage from "../pages/NotFoundPage";
 import Dashboard from "../features/admin/pages/Dashboard";
 import Quotations from "../features/quotations/QuotationsPage";
 import Invoices from "../features/invoices/InvoicesPage";
+import LoginPage from "../features/auth/LoginPage";
+import RequireAuth from "../features/auth/RequireAuth";
 
 /**
  * To add a new page:
@@ -23,8 +25,9 @@ export default function AppRoutes() {
       </Route>
 
       {/* Internal business tools */}
+      {ADMIN_ENABLED && <Route path="/admin/login" element={<LoginPage />} />}
       {ADMIN_ENABLED && (
-      <Route path="/admin" element={<AdminLayout />}>
+      <Route path="/admin" element={<RequireAuth><AdminLayout /></RequireAuth>}>
         <Route index element={<Dashboard />} />
         <Route path="quotations" element={<Quotations />} />
         <Route path="invoices" element={<Invoices />} />

@@ -1,9 +1,13 @@
 import os
 
-from fastapi import FastAPI
+from dotenv import load_dotenv
+
+load_dotenv()  # local dev: read server/.env (on Render, set variables in the dashboard)
+
+from fastapi import FastAPI  # noqa: E402
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.routes import api
+from app.routes import api  # noqa: E402
 
 app = FastAPI(title="Gora Engineering API")
 

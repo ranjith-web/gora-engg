@@ -31,6 +31,8 @@ const readError = async (err) => {
   }
   if (err.code === "ECONNABORTED") return "The server took too long to respond. Please try again.";
   if (!err.response) return "Could not reach the server. Check your connection and try again.";
+  if (err.response.status === 401) return "Your session has expired. Please sign in again.";
+  if (err.response.status === 403) return "This account is not allowed to create quotations.";
   return `Server error (${err.response.status})`;
 };
 
