@@ -10,6 +10,7 @@ export default function Dashboard() {
         {ADMIN_NAV.filter((n) => !n.end).map((n) => (
           <Link key={n.to} to={n.to} className="border hairline bg-white p-6 transition-colors hover:border-accent-brand">
             <p className="font-display text-xl font-bold">{n.label}</p>
+            {n.description && <p className="mt-2 text-sm leading-relaxed text-stone-600">{n.description}</p>}
           </Link>
         ))}
       </div>
